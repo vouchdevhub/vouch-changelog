@@ -1,0 +1,19 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: AzureFileCopy@4
+  inputs:
+    SourcePath: '*'
+    azureSubscription: 'Vouch One (BizSpark) (2c7897c6-c99b-497f-bba1-b2d522a6d295)'
+    Destination: 'AzureBlob'
+    storage: 'storv2prodstatic'
+    ContainerName: 'assets'
