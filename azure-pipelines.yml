@@ -11,6 +11,7 @@ pool:
 
 steps:
 - task: AzureFileCopy@4
+  displayName: Copy changelog to blob
   inputs:
     SourcePath: '$(System.DefaultWorkingDirectory)/changelog.md'
     azureSubscription: 'Vouch'
