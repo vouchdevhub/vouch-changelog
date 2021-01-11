@@ -13,7 +13,7 @@ steps:
 - task: AzureFileCopy@4
   inputs:
     SourcePath: '$(System.DefaultWorkingDirectory)/changelog.md'
-    azureSubscription: 'Vouch One (BizSpark) (2c7897c6-c99b-497f-bba1-b2d522a6d295)'
+    azureSubscription: 'Vouch'
     Destination: 'AzureBlob'
     storage: 'storv2prodstatic'
     ContainerName: 'assets'
