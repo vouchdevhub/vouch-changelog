@@ -1,3 +1,8 @@
+---
+date: "2021-12-02"
+title: "Vouch Beta"
+---
+
 # Vouch Changelog
 
 
