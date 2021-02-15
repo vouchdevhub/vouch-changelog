@@ -9,12 +9,3 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 
-steps:
-- task: AzureFileCopy@4
-  displayName: Copy changelog to blob
-  inputs:
-    SourcePath: '$(System.DefaultWorkingDirectory)/changelog.md'
-    azureSubscription: 'Vouch'
-    Destination: 'AzureBlob'
-    storage: 'storv2prodstatic'
-    ContainerName: 'assets'
